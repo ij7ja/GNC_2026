@@ -19,7 +19,6 @@ function divisible(){
         for(i = 1; i <= 10; i++){
             display.innerHTML = "Not divisible";
             console.log("Not divisible by 3");
-            
         }
     
     }
