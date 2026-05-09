@@ -15,5 +15,5 @@ const students = [
     {name: 'Ada', marks: 75},
 ];
 students.map(s =>{
-    console.log('Marks of ${s.name) is ${s.marks}')
+    console.log(`Marks of ${s.name} is ${s.marks}`)
 })
