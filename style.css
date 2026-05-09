@@ -1,8 +1,24 @@
 body{
     background-color: hsl(0, 0%, 5%);
     color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 h1{
     color: green;
-    background-color: red;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 95%);
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    border: 5px solid white;
 }
