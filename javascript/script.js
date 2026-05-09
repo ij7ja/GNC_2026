@@ -68,16 +68,34 @@ console.log(grade(50));
 // })
 
 
+
+
+
+
+//Chnaging color animation
 let box = document.querySelector(".box");
 let c = 0;
+
 
 const change = () => {
     let colors = ['red', 'blue', 'yellow', 'green', 'gray', 'lime'];
     box.style.backgroundColor = colors[c]
     c = (c+1) % colors.length;
     console.log("Changing");
-    
-}
 
+}
 box.addEventListener('click', change)
-setInterval(change, 1000)
+setInterval(change, 999)
+
+
+
+
+//Changing image animation
+let box1 = document.querySelector(".box1")
+const changeBack = () => {
+    let url = ['./img/hello.jpg', './img/bolo.jpg', './img/byy.jpg', './img/hello.jpg',];
+    box1.style.backgroundImage = `url(${url[c]})`;
+    c = (c+1)%url.length;
+}
+box1.addEventListener('click', changeBack)
+setInterval(changeBack, 999)
